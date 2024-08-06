@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Framework</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Result Application</h1>
+    <form method="post" action="/submit">
+        <label for="English">English:</label>
+        <input type="text" id="English" name="English" value="0">
+        
+        <label for="Maths">Maths:</label>
+        <input type="text" id="Maths" name="Maths" value="0">
+        
+        <label for="Physics">Physics:</label>
+        <input type="text" id="Physics" name="Physics" value="0">
+        
+        <label for="Programming Language">Programming Language:</label>
+        <input type="text" id="Programming Language" name="Programming Language" value="0">
+        
+        <label for="Islamiat">Islamiat:</label>
+        <input type="text" id="Islamiat" name="Islamiat" value="0">
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
